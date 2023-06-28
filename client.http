@@ -1,24 +1,41 @@
-GET http://localhost:3000
+
+GET http://localhost:2000/viewvisitor
 
 ####
-POST http://localhost:3000/login
+POST http://localhost:2000/registeradmin
 Content-Type: application/json 
 //header : what is the content type
 
-{
-    "username": "syazwinapauzi",
-    "password": "123456"
-}
 
+[{
+    "username": "syazwina",
+    "password": 123456
+},
+
+{
+    "username":"awin",
+    "password":789011
+}]
 
 
 ####
-POST http://localhost:3000/register
+POST http://localhost:2000/login
 Content-Type: application/json
 
+{
+    "username": "awin",
+    "password": 123456
+}
+
+####
+POST http://localhost:2000/registervisitor
+Content-Type: application/json
 
 {
-    "Visitor_id": "0002",
-    "Name": "Syazwani Nizam"
-
+    "Name": "Syana",
+    "Phone_Number" : "01234567890",
+    "Address": "jalan permai",
+    "Floor_Wing": "23k",
+    "Whom_to_meet": "zana",
+    "Reason_to_meet": "party"
 }
